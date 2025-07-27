@@ -37,7 +37,7 @@ gitleaks dir -v --no-banner
 Alternatively, you can execute it directly using `npx` like so -
 
 ```sh
-npx gitleaks dir -v --no-banner
+npx --package @0xts/gitleaks-cli -- gitleaks dir -v --no-banner
 ```
 
 Check [gitleaks](https://github.com/gitleaks/gitleaks) documentation for extensive configuration and usage options.

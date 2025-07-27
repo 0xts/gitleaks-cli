@@ -1,0 +1,60 @@
+{
+  "name": "@0xts/gitleaks-cli",
+  "version": "0.1.0",
+  "description": "This is a gitleaks cli tool that can be used to scan git repositories for secrets and redact them.",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0xts/gitleaks-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/0xts/gitleaks-cli/issues"
+  },
+  "homepage": "https://github.com/0xts/gitleaks-cli.git",
+  "engineStrict": true,
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "bin": {
+    "gitleaks": "bin/gitleaks"
+  },
+  "files": [
+    "bin",
+    "index.js"
+  ],
+  "scripts": {
+    "postinstall": "node ./scripts/decompress.js",
+    "prepare": "husky"
+  },
+  "keywords": [
+    "gitleaks",
+    "secrets",
+    "redact"
+  ],
+  "author": "Tanish Sharma <tanish0123@gmail.com>",
+  "packageManager": "pnpm@10.13.1",
+  "license": "BSD-3-Clause",
+  "devDependencies": {
+    "@changesets/cli": "^2.29.5",
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "@types/node": "^24.1.0",
+    "conventional-changelog": "^7.1.1",
+    "conventional-changelog-conventionalcommits": "^9.1.0",
+    "husky": "^9.1.7",
+    "prettier": "^3.6.2"
+  },
+  "dependencies": {
+    "postinstall": "^0.11.2"
+  },
+  "prettier": {
+    "singleQuote": false,
+    "semi": true,
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "printWidth": 80,
+    "useTabs": false,
+    "endOfLine": "lf"
+  }
+}

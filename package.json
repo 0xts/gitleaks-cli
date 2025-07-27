@@ -1,6 +1,6 @@
 {
   "name": "@0xts/gitleaks-cli",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "This is a gitleaks cli tool that can be used to scan git repositories for secrets and redact them.",
   "main": "./index.js",
   "types": "./index.d.ts",
